@@ -25,7 +25,7 @@ class Movies extends Component {
           {this.state.movies.map((movie, i) => {
             if(i <20 ){
             return(
-                <h4 key={movie.movieID}>{i+1}. {movie.title}, {movie.genres}</h4>   
+                <h4 key={movie.movieId}>{i+1}. {movie.title}, {movie.genres}</h4>   
             )}
           })}
         </ul>
