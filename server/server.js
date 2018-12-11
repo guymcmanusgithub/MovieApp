@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 const csv=require('csvtojson')
+// var fs = require('fs');
+
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -8,27 +10,17 @@ app.use(function(req, res, next) {
 });
 
 app.get('/', (req, res) => {
-  const csvFilePath='movies.csv'
-  csv()
-  .fromFile(csvFilePath)
-  .then((jsonObj)=>{
-    res.send(jsonObj)
-  })
-  // const movies = [
-  //   {
-  //     movieID: 1,
-  //     title: 'Jurassic Park',  
-  //   },
-  //   {
-  //     movieID: 2,
-  //     title: 'Jurassic Park 2',  
-  //   },
-  //   {
-  //     movieID: 3,
-  //     title: 'Jurassic Park 3',  
-  //   }
-  // ];
- 
+  const jsonObj = require('./movies.json');
+  console.log(jsonObj)
+  res.send(jsonObj)
+  
+  // const csvFilePath='movies.csv'
+  // csv()
+  // .fromFile(csvFilePath)
+  // .then((jsonObj)=>{
+  //   res.send(jsonObj)
+  //   fs.writeFile('movies.json', JSON.stringify(jsonObj), 'utf8', () => null);
+  // })
   
 })
 
