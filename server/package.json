@@ -1,0 +1,27 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "server for movieapp",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "proxy": "http://localhost:5000",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guymcmanusgithub/MovieApp.git"
+  },
+  "author": "Guy-Anhar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guymcmanusgithub/MovieApp/issues"
+  },
+  "homepage": "https://github.com/guymcmanusgithub/MovieApp#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.8"
+  }
+}
