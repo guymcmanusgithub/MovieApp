@@ -7,7 +7,6 @@
     "start": "node server.js",
     "server": "nodemon server.js"
   },
-  "proxy": "http://localhost:5000",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/guymcmanusgithub/MovieApp.git"
@@ -19,6 +18,7 @@
   },
   "homepage": "https://github.com/guymcmanusgithub/MovieApp#readme",
   "dependencies": {
+    "csvtojson": "^2.0.8",
     "express": "^4.16.4"
   },
   "devDependencies": {
