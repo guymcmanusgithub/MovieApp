@@ -9,7 +9,7 @@ class Movies extends Component {
     }
   }
   componentDidMount(){
-    fetch('http://localhost:5000/')
+    fetch('http://localhost:5000/movies')
     .then(res => res.json())
     .then(movies => this.setState({movies}, () => console.log('Movies fetched ...', movies)))
     .catch(function(error) {

@@ -4,6 +4,7 @@ import Typeahead from './typeahead.js';
 // import Movies from './movies.css'
 import './App.css';
 
+
 class App extends Component {
   render() {
     return (
@@ -16,5 +17,6 @@ class App extends Component {
     );
   }
 }
-
 export default App;
+
+
