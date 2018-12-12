@@ -1,0 +1,40 @@
+body {
+    font-family: 'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+
+    background:#f4f5f2;
+    text-align: center;
+    /* display: grid;
+    grid-auto-columns: auto 1fr auto;
+    grid-auto-rows: 100px auto;
+    grid-template-areas:
+    " . list ."
+     */
+}
+form {
+    grid-area: search;
+    margin-top: 40px;
+    font-size: 1.5em;
+}
+input {
+    font-size: 1.5em;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+  width: 50%;
+  padding: 20px;
+
+}
+ul {
+    grid-area: list;
+    /* border: 1px solid black; */
+    /* width: 400px; */
+    align-content: center;
+    justify-content: center; 
+} 
+li {
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+}

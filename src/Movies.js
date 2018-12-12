@@ -26,7 +26,9 @@ class Movies extends Component {
             if(i <20 ){
             return(
                 <h4 key={movie.movieId}>{i+1}. {movie.title}, {movie.genres}</h4>   
-            )}
+            )} else {
+              return null;
+            }
           })}
         </ul>
       </div>
